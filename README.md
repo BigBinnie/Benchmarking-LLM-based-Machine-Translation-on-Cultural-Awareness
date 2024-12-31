@@ -1,9 +1,33 @@
 # Benchmarking Machine Translation with Cultural Awareness
 
 This repository contains data and code for the paper [Benchmarking Machine Translation with Cultural Awareness](https://arxiv.org/abs/2305.14328).
+## Overview
+How to Evaluate MT Systems’ **Cultural Awareness**?
 
-## Data
-The parallel corpora for English-Chinese, English-French, English-Spanish, English-Hindi, English-Tamil, and English-Telugu are under the folder /data
+To address this challenge, we propose
 
+1. **CAMT (6,948 parallel sentences)**: a novel parallel corpus for culturally-aware machine translation
+
+2. **CSI-Match and Pragmatic Translation Assessment**: two new evaluation metrics to assess translation quality of cultural nuances, particularly for terms lacking established translations.
+
+3. **Benchmarking both LLM-based MT and NMT systems**: our results indicate that LLMs can effectively incorporate external cultural knowledge, thereby improving the pragmatic translation quality of CSIs.
+
+
+## CAMT Data
+CAMT Corpus includes **6** language pairs, **6,983** CSIs across **18** concept categories from **235** countries. The statisics are as follows:
+
+| **Pair**  | **Sent.** | **CSIs Counts** | **CSIs Types** | **CSI Translations** |
+|-----------|-----------|-----------------|----------------|----------------------|
+| En-Zh     | 778       | 794             | 601            | 730                  |
+| En-Fr     | 2,073     | 2,213           | 2,213          | 1,130                |
+| En-Es     | 1,580     | 1,652           | 1,652          | 817                  |
+| En-Hi     | 1,086     | 1,127           | 1,127          | 168                  |
+| En-Ta     | 677       | 695             | 695            | 118                  |
+| En-Te     | 754       | 695             | 695            | 66                   |
+| **Total** | 6,948     | 7,176           | 6,983          | 3,029                |
+
+
+We performed quality checks on the En-Zh dataset and filtered out low-quality data. For the other language pairs, the data was automatically generated using our pipeline.
 ## Pipeline for data preprocessing
-The code will be released soon
+
+## Citation
