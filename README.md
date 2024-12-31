@@ -29,5 +29,18 @@ CAMT Corpus includes **6** language pairs, **6,983** CSIs across **18** concept 
 
 We performed quality checks on the En-Zh dataset and filtered out low-quality data. For the other language pairs, the data was automatically generated using our pipeline.
 ## Pipeline for data preprocessing
+1. **Entity Linking**
+2. **Category Classification**
+3. **Cultural Data Augmentation**
 
 ## Citation
+If you use any source codes or datasets included in this repository in your work, please cite the corresponding paper. The bibtex are listed below:
+```
+@inproceedings{yao2024benchmarking,
+  title={Benchmarking Machine Translation with Cultural Awareness},
+  author={Yao, Binwei and Jiang, Ming and Bobinac, Tara and Yang, Diyi and Hu, Junjie},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2024},
+  pages={13078--13096},
+  year={2024}
+}
+```
