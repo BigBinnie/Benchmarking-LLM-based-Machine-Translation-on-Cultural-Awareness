@@ -1,8 +1,9 @@
 # Benchmarking Machine Translation with Cultural Awareness
 
-This repository contains data and code for the paper [Benchmarking Machine Translation with Cultural Awareness](https://arxiv.org/abs/2305.14328).
+This repository contains data and code for the paper [Benchmarking Machine Translation with Cultural Awareness](https://arxiv.org/abs/2305.14328). If you have any questions, please reach out to the authors at binwei.yao@wisc.edu.
+
 ## Overview
-How to Evaluate MT Systems’ **Cultural Awareness**?
+*How to Evaluate MT Systems’ **Cultural Awareness**?*
 
 To address this challenge, we propose
 
