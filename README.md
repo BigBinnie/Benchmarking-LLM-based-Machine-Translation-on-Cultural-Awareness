@@ -38,14 +38,12 @@ We performed quality checks on the En-Zh dataset and filtered out low-quality da
 
 We use [drafttopc](https://github.com/wikimedia/drafttopic) to label the categories of these wiki entities. The scripts are as following:
 
-- Categorize the entity
-
+- Categorize the entity 
 ``bash scripts/category_classification.sh``
 
 - Keep the cultural related entities
 
 3. **Cultural Metadata Augmentation**
-
 ``bash scripts/metadata_augmentation.sh``
 
 ## Citation
