@@ -1,0 +1,20 @@
+category_list = [
+"Culture.Food and drink",
+"Culture.Visual arts.Architecture",
+"History and Society.Transportation", 
+"Culture.Sports", 
+"Culture.Media.Entertainment",
+"History and Society.Politics and government",
+"Culture.Philosophy and religion",
+"Culture.Literature",
+"Culture.Visual arts.Visual arts*",
+"Culture.Visual arts.Fashion",
+"Culture.Visual arts.Comics and Anime",
+"Culture.Performing arts",
+"Culture.Media.Music",
+"Culture.Media.Films",
+"Culture.Media.Books",
+"History and Society.History",
+"STEM.Biology",
+"Geography.Regions.Americas.North America"
+]
