@@ -31,16 +31,21 @@ CAMT Corpus includes **6** language pairs, **6,983** CSIs across **18** concept 
 We performed quality checks on the En-Zh dataset and filtered out low-quality data. For the other language pairs, the data was automatically generated using our pipeline.
 ## Pipeline for data preprocessing
 1. **Entity Linking**
+
 We use [SLING](https://github.com/ringgaard/sling) to label the entities which have Wikipedia pages in the source sentence (in English). Please follow the instruction of SLING to [install](https://github.com/ringgaard/sling/blob/master/doc/guide/install.md) and [link the entity](https://github.com/ringgaard/sling/blob/master/doc/guide/wikiflow.md). After parsing the output of SLING, you can get all the entities' QIDs in the sentence.
 
 2. **Culture Category Classification**
+
 We use [drafttopc](https://github.com/wikimedia/drafttopic) to label the categories of these wiki entities. The scripts are as following:
 
 - Categorize the entity
+
 ``bash scripts/category_classification.sh``
+
 - Keep the cultural related entities
 
 3. **Cultural Metadata Augmentation**
+
 ``bash scripts/metadata_augmentation.sh``
 
 ## Citation
