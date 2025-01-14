@@ -29,7 +29,7 @@ CAMT Corpus includes **6** language pairs, **6,983** CSIs across **18** concept 
 
 
 We performed quality checks on the En-Zh dataset and filtered out low-quality data. For the other language pairs, the data was automatically generated using our pipeline.
-## Pipeline for data preprocessing
+## Pipeline for CAMT Construction
 1. **Entity Linking**
   Assume you have the parallel corpus as ``en2zh.en.txt`` and ``en2zh.zh.txt``.
   We use [SLING](https://github.com/ringgaard/sling) to label the entities which have Wikipedia pages in the source sentence (in English). Please follow the instruction of SLING to [install](https://github.com/ringgaard/sling/blob/master/doc/guide/install.md) and [link the entity](https://github.com/JunjieHu/deep/blob/main/SLING.md). After parsing the output of SLING, you can extract all the entities' QIDs in the sentence. The output format should be the same as data/entity.json.
