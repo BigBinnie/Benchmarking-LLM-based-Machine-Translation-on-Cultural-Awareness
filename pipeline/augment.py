@@ -1,14 +1,9 @@
 from wikidata.client import Client
-from bs4 import BeautifulSoup
 from queue import Queue
 from threading import Thread
 import json 
-import urllib.error
-from tqdm import tqdm
-from wikidataintegrator import wdi_core,wdi_helpers
-from hanziconv import HanziConv
+from wikidataintegrator import wdi_core
 import json
-import os
 import argparse
 
 def get_metadata_by_Qid(Qid, tgtlang):
@@ -77,22 +72,16 @@ def get_metadata_by_Qid(Qid, tgtlang):
         "country_of_origin": country
     }
 
-def get_wikidata(input_file, output_file):
+def get_wikidata(input_file, output_file, tgtlang="zh"):
     url_Quene = Queue()
     result_Queue = Queue()
 
     # load data
     with open(input_file) as f:
         raw_data = json.load(f)
-    labels = []
-    qid_list = []
-    for sample in raw_data:
-        for label in sample["labels"]:
-            if label["Qid"] is not None:
-                qid_list.append(label["Qid"])
+    qid_list = list(raw_data.keys())
 
     print(len(qid_list))
-    input()
     for index, qid in enumerate(qid_list[:]):
         url_Quene.put([index, qid])
 
@@ -104,7 +93,7 @@ def get_wikidata(input_file, output_file):
             out_Quene.put([index, metadata])
             in_Quene.task_done()
 
-    n = 1
+    n = 10
     print('start spider*{}'.format(n))
     for index in range(n):
         thread = Thread(target=do_something, args=(url_Quene, result_Queue, )) 
@@ -138,8 +127,9 @@ def main():
     argparser = argparse.ArgumentParser()
     argparser.add_argument("--input", type=str, help="Input file")
     argparser.add_argument("--output", type=str, help="Output file")
+    argparser.add_argument("--tgtlang", type=str, default="zh", help="Target language")
     args = argparser.parse_args()
-    get_wikidata(args.input, args.output)
+    get_wikidata(args.input, args.output, args.tgtlang)
 
 if __name__ == "__main__":
     main()
