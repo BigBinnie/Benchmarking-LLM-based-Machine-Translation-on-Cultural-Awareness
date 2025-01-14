@@ -34,9 +34,7 @@ We performed quality checks on the En-Zh dataset and filtered out low-quality da
   Assume you have the parallel corpus as ``en2zh.en.txt`` and ``en2zh.zh.txt``.
   We use [SLING](https://github.com/ringgaard/sling) to label the entities which have Wikipedia pages in the source sentence (in English). Please follow the instruction of SLING to [install](https://github.com/ringgaard/sling/blob/master/doc/guide/install.md) and [link the entity](https://github.com/JunjieHu/deep/blob/main/SLING.md). After parsing the output of SLING, you can extract all the entities' QIDs in the sentence. The output format should be the same as data/entity.json.
 
-2. **Culture Category Classification**
-
-We use [drafttopic](https://github.com/wikimedia/drafttopic) to label the categories of these wiki entities. The scripts are as following:
+2. **Culture Category Classification** We use [drafttopic](https://github.com/wikimedia/drafttopic) to label the categories of these wiki entities. The scripts are as following:
 - Install the package fair
 ``pip install flair``
 
@@ -44,7 +42,7 @@ We use [drafttopic](https://github.com/wikimedia/drafttopic) to label the catego
 ``bash scripts/categorize.sh``
 
 
-3. **Cultural Metadata Augmentation**
+3. **Cultural Metadata Augmentation** We use Wikidata to augment the cultural knowledge of entities.
 - Install the package
 ``pip install Wikidata``
 ``pip install wikidataintegrator``
@@ -52,10 +50,9 @@ We use [drafttopic](https://github.com/wikimedia/drafttopic) to label the catego
 - Knowledge Augment
 ``bash scripts/augment.sh``
 
-4. Only keep the parallel sentences including cultural-specific items, then you can get the corpus which including CSI annotations.
+4. **Only keep the parallel sentences including cultural-specific items, then you can get the corpus which including CSI annotations.**
 
 ## Evaluation (TODO)
-Results are at output.
 
 ## Citation
 If you use any source codes or datasets included in this repository in your work, please cite the corresponding paper. The bibtex are listed below:
