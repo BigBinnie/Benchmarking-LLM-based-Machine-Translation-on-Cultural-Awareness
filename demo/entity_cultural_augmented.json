@@ -1,0 +1,72 @@
+{
+ "Q3299279": {
+  "metadata": {
+   "sitelinks": {
+    "enwiki": "https://en.wikipedia.org/wiki/Land_Transport_Authority",
+    "zhwiki": "https://zh.wikipedia.org/wiki/%E9%99%86%E8%B7%AF%E4%BA%A4%E9%80%9A%E7%AE%A1%E7%90%86%E5%B1%80"
+   },
+   "labels": {
+    "en": "Land Transport Authority",
+    "zh": "陆路交通管理局"
+   },
+   "descriptions": {
+    "en": "government agency in Singapore",
+    "zh": "新加坡政府机构"
+   },
+   "aliases": {
+    "en": [],
+    "zh": [
+     "陸交局",
+     "新加坡陆路交通管理局"
+    ]
+   }
+  },
+  "country_of_origin": "Singapore"
+ },
+ "Q17141380": {
+  "metadata": {
+   "sitelinks": {
+    "enwiki": "https://en.wikipedia.org/wiki/The_Headless_Horseman_Pursuing_Ichabod_Crane",
+    "zhwiki": "https://zh.wikipedia.org/wiki/%E7%84%A1%E9%A0%AD%E9%A8%8E%E5%A3%AB%E8%BF%BD%E9%80%90%E4%BC%8A%E5%8D%A1%E9%AE%91%E5%BE%B7%C2%B7%E5%85%8B%E8%90%8A%E6%81%A9"
+   },
+   "labels": {
+    "en": "The Headless Horseman Pursuing Ichabod Crane",
+    "zh": "無頭騎士追逐伊卡鮑德·克萊恩"
+   },
+   "descriptions": {
+    "en": "painting by John Quidor",
+    "zh": ""
+   },
+   "aliases": {
+    "en": [],
+    "zh": []
+   }
+  },
+  "country_of_origin": "United States"
+ },
+ "Q186504": {
+  "metadata": {
+   "sitelinks": {
+    "enwiki": "https://en.wikipedia.org/wiki/The_Portrait_of_a_Lady_(film)",
+    "zhwiki": "https://zh.wikipedia.org/wiki/%E5%A6%AE%E5%8F%AF%C2%B7%E5%9F%BA%E5%AB%9A%E4%B9%8B%E9%A2%A8%E6%83%85%E8%90%AC%E7%A8%AE"
+   },
+   "labels": {
+    "en": "The Portrait of a Lady",
+    "zh": "淑女本色"
+   },
+   "descriptions": {
+    "en": "1996 film directed by Jane Campion",
+    "zh": ""
+   },
+   "aliases": {
+    "en": [
+     "Portrait of a Lady"
+    ],
+    "zh": [
+     "伴我一世情"
+    ]
+   }
+  },
+  "country_of_origin": "United States"
+ }
+}
